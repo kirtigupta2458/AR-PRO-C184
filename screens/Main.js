@@ -215,26 +215,9 @@ export default class Main extends Component {
               horizontal
               showsHorizontalScrollIndicator={false}
             >
-              {Object.keys(data).map(category => (
-                <TouchableOpacity
-                  key={`category-button-${category}`}
-                  style={[
-                    styles.category,
-                    {
-                      backgroundColor:
-                        this.state.selected === category ? "#FFA384" : "#E7F2F8"
-                    }
-                  ]}
-                  onPress={() =>
-                    this.setState({
-                      selected: category,
-                      current_filter: data[category][0].id
-                    })
-                  }
-                >
-                  <Text>{category}</Text>
-                </TouchableOpacity>
-              ))}
+             
+             
+             
             </ScrollView>
           </View>
           <View style={styles.lowerBottomContainer}>
